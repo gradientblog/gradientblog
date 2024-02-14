@@ -17,8 +17,20 @@
             padding: 20px;
             text-align: center;
         }
-        h1 {
-            margin: 0;
+        .post .text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+        .post:hover .text {
+            opacity: 1;
         }
         .container {
             max-width: 800px;
@@ -46,17 +58,18 @@
     <div class="container">
         <div class="post">
             <img src="https://raw.githubusercontent.com/gradientblog/gradientblog/main/IMG_8093.jpeg" alt="Macarons">
-            <h2>Post Title 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer tincidunt mauris nec ipsum suscipit, et ultrices neque mattis.</p>
+            <div class="text">
+                <h2>Macarons, Cancun</h2>
+            </div>
         </div>
 
         <div class="post">
             <img src="https://raw.githubusercontent.com/gradientblog/gradientblog/main/IMG_8723.jpeg" alt="Library">
-            <h2>Post Title 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer tincidunt mauris nec ipsum suscipit, et ultrices neque mattis.</p>
+            <div class="text">
+                <h2>Post Title 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer tincidunt mauris nec ipsum suscipit, et ultrices neque mattis.</p>
+            </div>
         </div>
-
-        <!-- Add more posts as needed -->
     </div>
 </body>
 </html>
